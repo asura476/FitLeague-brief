@@ -11,42 +11,79 @@
 
 </head>
 
-<body>
-    <style>
-        body {
-            width: 80%;
-            margin: auto;
-        }
+<body >
+    <div class="d-flex">
+    <section class="sideBar">
+            <nav class="sideBar d-flex flex-column align-items-start  p-4 bg-dark text-white  vh-100 gap-4 "
+                style="width: 240px; ">
+                <a href="/"
+                    class="d-flex align-items-center  ms-4 text-white text-decoration-none border-success border-bottom pb-3 ">
+                    <img src="assets/logo.png" alt="logo" width="40" height="40" class="me-2">
+                    <span class="fs-4">FitLeague</span>
+                </a>
+                <ul class="d-flex flex-column gap-4 list-unstyled">
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="http://127.0.0.1:5501/index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
 
-        .activeChallengesCard {
-            background-color: rgb(210, 192, 192);
-        }
-    </style>
-    <section class="p-4">
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-trophy"></i>
+                        <a href="#" class="text-white text-decoration-none">Challenges</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="http://127.0.0.1:5501/participants.html"
+                            class="text-white text-decoration-none">Participants</a>
+                    </li>
+
+                    <li class="d-flex gap-3 border-success border-bottom pb-3">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <a href="#" class="text-white text-decoration-none">Results</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="#" class="text-white text-decoration-none">Settings</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <a href="#" class="text-white text-decoration-none">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    
+    <section class="p-4 w-75 mx-auto vh-100">
         <section>
             <div class="d-flex align-items-center">
-                <h2 class="px-4 p-2">Participants</h2>
+                <h4 class="px-4 p-2">Participants</h4>
                 <div class="d-flex gap-3">
                     <img src="https://i.pravatar.cc/40?img=0" alt="Sarah" class="rounded-circle" width="35" height="35">
                     <img src="https://i.pravatar.cc/40?img=5" alt="Sarah" class="rounded-circle" width="35" height="35">
-                    <img src="https://i.pravatar.cc/40?img=12" alt="Sarah" class="rounded-circle" width="35" height="35">
-                    <img src="https://i.pravatar.cc/40?img=56" alt="Sarah" class="rounded-circle" width="35" height="35">
-                    <img src="https://i.pravatar.cc/40?img=09" alt="Sarah" class="rounded-circle" width="35" height="35">
-                    
+                    <img src="https://i.pravatar.cc/40?img=12" alt="Sarah" class="rounded-circle" width="35"
+                        height="35">
+                    <img src="https://i.pravatar.cc/40?img=56" alt="Sarah" class="rounded-circle" width="35"
+                        height="35">
+                    <img src="https://i.pravatar.cc/40?img=09" alt="Sarah" class="rounded-circle" width="35"
+                        height="35">
+
                 </div>
             </div>
-            <div class=" bg-light border-dark rounded-3 vh-100 p-4 ">
-                <div class="px-4">
-                    <form class="d-flex justify-content-between form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 " style="width: 30%;" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
-                            style="width: 30%;">Search</button>
-                    </form>
-                    <div class="d-flex justify-content-between pb-1 p-4 px-1 border-bottom ">
-                        <p>Name</p>
-                        <p>Status</p>
-                    </div>
+            <div class=" bg-light border-dark rounded-3  p-4 ">
+                <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+
+                    <input type="search" class="form-control" style="max-width: 300px;"
+                        placeholder="Search participants...">
+
+                    <select class="form-select" style="max-width: 180px;">
+                        <option value="all">All participants</option>
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                    </select>
+
                 </div>
                 <div class="d-flex flex-column gap-3 bg-light rounded-3  p-4 ms-auto ">
                     <div class="TopInRank d-flex flex-row justify-content-between border-bottom pb-4">
@@ -58,13 +95,13 @@
                             <img src="https://i.pravatar.cc/44?img=3" alt="Sarah" class="rounded-circle" width="35"
                                 height="35">
                             <div>
-                                <h6 class="mb-0  fw-semibold">30 Days Running</h6>
+                                <h6 class="mb-0  fw-semibold">Ahmed</h6>
                                 <small class="text-muted">5 challenges comapleted</small>
                             </div>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
-                            <span class="text-success small bg-warning rounded-3 px-3">Active</span>
-                            <span class="points text-success small fw-medium">4,200 pts</span>
+                            <span class="badge bg-warning text-success px-3 py-2">Active</span>
+                            <span class="points text-dark small fw-medium">4,200 pts</span>
                         </div>
                     </div>
                 </div>
@@ -77,13 +114,13 @@
                             <img src="https://i.pravatar.cc/40?img=5" alt="Sarah" class="rounded-circle" width="35"
                                 height="35">
                             <div>
-                                <h6 class="mb-0  fw-semibold">30 Days Running</h6>
+                                <h6 class="mb-0  fw-semibold">Rebecca</h6>
                                 <small class="text-muted">5 challenges comapleted</small>
                             </div>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
                             <span class="text-success small bg-warning rounded-3 px-3">Active</span>
-                            <span class="points text-success small fw-medium">4,330 pts</span>
+                            <span class="points text-dark small fw-medium">4,330 pts</span>
                         </div>
                     </div>
                 </div>
@@ -97,13 +134,13 @@
                             <img src="https://i.pravatar.cc/40?img=7" alt="Sarah" class="rounded-circle" width="35"
                                 height="35">
                             <div>
-                                <h6 class="mb-0  fw-semibold">30 Days Running</h6>
+                                <h6 class="mb-0  fw-semibold">Sarah</h6>
                                 <small class="text-muted">5 challenges comapleted</small>
                             </div>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
                             <span class="text-success small bg-warning rounded-3 px-3">Active</span>
-                            <span class="points text-success small fw-medium">3,400 pts</span>
+                            <span class="points text-dark small fw-medium">3,400 pts</span>
                         </div>
                     </div>
                 </div>
@@ -117,19 +154,20 @@
                             <img src="https://i.pravatar.cc/40?img=9" alt="Sarah" class="rounded-circle" width="35"
                                 height="35">
                             <div>
-                                <h6 class="mb-0  fw-semibold">30 Days Running</h6>
+                                <h6 class="mb-0  fw-semibold">mina</h6>
                                 <small class="text-muted">5 challenges comapleted</small>
                             </div>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
                             <span class="text-success small bg-warning rounded-3 px-3">Active</span>
-                            <span class="points text-success small fw-medium">1,200 pts</span>
+                            <span class="points text-dark small fw-medium">1,200 pts</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+    </div>
 </body>
 
 </html>

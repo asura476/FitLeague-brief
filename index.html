@@ -5,59 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body class="d-flex">
-
-
-    <style>
-        /* body {
-            background-color: rgb(222, 213, 213);
-            
-        } */
-    </style>
-
-    <div>
-        <nav class="sideBar d-flex flex-column align-items-start  p-4 bg-dark text-white  vh-100 gap-4 "
-            style="width: 240px; ">
-            <a href="/"
-                class="d-flex align-items-center  ms-4 text-white text-decoration-none border-success border-bottom pb-3 ">
-                <img src="assets/logo.png" alt="logo" width="40" height="40" class="me-2">
-                <span class="fs-4">FitLeague</span>
-            </a>
-            <ul class="d-flex  flex-column gap-4">
-                <li class="d-flex gap-2"><i class="fa-solid fa-house"></i><a href="#"></a>Home</li>
-                <li class="d-flex gap-2"><i class="fa-solid fa-trophy"></i><a href="#"></a>challenges</li>
-                <li class="d-flex gap-2"><i class="fa-solid fa-users"></i><a href="#"></a>Participants</li>
-                <li class="d-flex gap-2 border-success border-bottom pb-3"><i
-                        class="fa-solid fa-square-poll-vertical"></i><a href="#"></a>Results</li>
-                <li class="d-flex gap-2"><i class="fa-solid fa-users"></i><a href="#"></a>Setting</li>
-                <li class="d-flex gap-2"><i class="fa-solid fa-square-poll-vertical"></i><a href="#"></a>About</li>
-            </ul>
-        </nav>
-    </div>
     <!-- !for searsh bar  -->
-    <div></div>
+    <div>
+
+    </div>
     <!-- for  hero section -->
-    <div></div>
+    <div>
+
+    </div>
+        <section class="sideBar">
+            <nav class="sideBar d-flex flex-column align-items-start  p-4 bg-dark text-white  vh-100 gap-4 "
+                style="width: 260px; ">
+                <a href="/"
+                    class="d-flex align-items-center  ms-4 text-white text-decoration-none border-success border-bottom pb-3 ">
+                    <img src="assets/logo.png" alt="logo" width="40" height="40" class="me-2">
+                    <span class="fs-4">FitLeague</span>
+                </a>
+                <ul class="d-flex flex-column gap-4 list-unstyled">
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="http://127.0.0.1:5501/participants.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-trophy"></i>
+                        <a href="#" class="text-white text-decoration-none">Challenges</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="http://127.0.0.1:5501/participants.html"
+                            class="text-white text-decoration-none">Participants</a>
+                    </li>
+
+                    <li class="d-flex gap-3 border-success border-bottom pb-3">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <a href="#" class="text-white text-decoration-none">Results</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="#" class="text-white text-decoration-none">Settings</a>
+                    </li>
+
+                    <li class="d-flex gap-3">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <a href="#" class="text-white text-decoration-none">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    
     <!-- for the cards -->
-    <section class="activeChallengesCard p-4 border rounded-3 w-100" >
-        <div class="cardHeader  d-flex flex-wrap justify-content-between align-items-center ">
-            <h5>Active Challenges</h5>
+    <section class="activeChallengesCard py-4 w-75 mx-auto vh-100">
+        <div class="cardHeader  d-flex  flex-wrap justify-content-between align-items-center ">
+            <h4>Active Challenges</h4>
             <a href="#" class="viewLink text-success text-decoration-none">
                 View all →
             </a>
         </div>
-
         <div class="challengesList ">
-
             <div class="challengesHeader d-flex justify-content-between ">
 
-                <div class="challheaderMain">
-                    <div class="challengesHeaderInfo d-flex align-items-center p-2 gap-2">
+                <div class="challheaderMain py-4">
+                    <div class="challengesHeaderInfo d-flex align-items-center  gap-2">
                         <div class="challengesIcon">
                             <img src="assets/logo.png" alt="logo" width="40" height="40">
                         </div>
@@ -82,9 +100,9 @@
                         <p class="topLAbel">Top in this challenge</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column gap-3 bg-success bg-light rounded-3 p-4" style="width: 90%; margin: auto;"  >
+                <div class="d-flex flex-column gap-3 bg-success bg-light rounded-3 p-4">
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -98,7 +116,7 @@
                     </div>
 
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -111,7 +129,7 @@
                         </div>
                     </div>
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -132,9 +150,9 @@
                         <p class="topLAbel">Top in this challenge</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column gap-3 bg-light rounded-3  p-4 ms-auto " style="width: 90%; margin: auto;" >
+                <div class="d-flex flex-column gap-3 bg-light rounded-3  p-4 ms-auto ">
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -148,7 +166,7 @@
                     </div>
 
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -161,7 +179,7 @@
                         </div>
                     </div>
                     <div class="TopInRank d-flex flex-row justify-content-between">
-                        <div class="d-flex  gap-2 align-items-center">
+                        <div class="d-flex  gap-3 align-items-center">
                             <span
                                 class="badge rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center"
                                 style="width: 24px; height: 24px;">1</span>
@@ -181,7 +199,11 @@
 
     </section>
     <!-- for active challenges and participes -->
-    <div></div>
+    <div>
+
+
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
