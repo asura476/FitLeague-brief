@@ -5,28 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 </head>
 
-<body>
-    <style>
-        body {
-            width: 80%;
-            margin: auto;
-        }
+<body class="d-flex">
 
-        .activeChallengesCard {
-            background-color: rgb(210, 192, 192);
-        }
+
+    <style>
+        /* body {
+            background-color: rgb(222, 213, 213);
+            
+        } */
     </style>
 
-    <section class="activeChallengesCard p-4 border rounded-3 ">
-
-        <div class="cardHeader  d-flex justify-content-between align-items-center">
+    <div>
+        <nav class="sideBar d-flex flex-column align-items-start  p-4 bg-dark text-white  vh-100 gap-4 "
+            style="width: 240px; ">
+            <a href="/"
+                class="d-flex align-items-center  ms-4 text-white text-decoration-none border-success border-bottom pb-3 ">
+                <img src="assets/logo.png" alt="logo" width="40" height="40" class="me-2">
+                <span class="fs-4">FitLeague</span>
+            </a>
+            <ul class="d-flex  flex-column gap-4">
+                <li class="d-flex gap-2"><i class="fa-solid fa-house"></i><a href="#"></a>Home</li>
+                <li class="d-flex gap-2"><i class="fa-solid fa-trophy"></i><a href="#"></a>challenges</li>
+                <li class="d-flex gap-2"><i class="fa-solid fa-users"></i><a href="#"></a>Participants</li>
+                <li class="d-flex gap-2 border-success border-bottom pb-3"><i
+                        class="fa-solid fa-square-poll-vertical"></i><a href="#"></a>Results</li>
+                <li class="d-flex gap-2"><i class="fa-solid fa-users"></i><a href="#"></a>Setting</li>
+                <li class="d-flex gap-2"><i class="fa-solid fa-square-poll-vertical"></i><a href="#"></a>About</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- !for searsh bar  -->
+    <div></div>
+    <!-- for  hero section -->
+    <div></div>
+    <!-- for the cards -->
+    <section class="activeChallengesCard p-4 border rounded-3 w-100" >
+        <div class="cardHeader  d-flex flex-wrap justify-content-between align-items-center ">
             <h5>Active Challenges</h5>
             <a href="#" class="viewLink text-success text-decoration-none">
                 View all →
@@ -39,7 +58,6 @@
 
                 <div class="challheaderMain">
                     <div class="challengesHeaderInfo d-flex align-items-center p-2 gap-2">
-
                         <div class="challengesIcon">
                             <img src="assets/logo.png" alt="logo" width="40" height="40">
                         </div>
@@ -48,7 +66,6 @@
                             <h6 class="mb-0  fw-semibold">30 Days Running</h6>
                             <small class="text-muted">Created by you • 5 participants</small>
                         </div>
-
                     </div>
                 </div>
 
@@ -65,7 +82,7 @@
                         <p class="topLAbel">Top in this challenge</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column gap-3 ">
+                <div class="d-flex flex-column gap-3 bg-success bg-light rounded-3 p-4" style="width: 90%; margin: auto;"  >
                     <div class="TopInRank d-flex flex-row justify-content-between">
                         <div class="d-flex  gap-2 align-items-center">
                             <span
@@ -90,7 +107,7 @@
                             <span class="name ">Ahmed</span>
                         </div>
                         <div>
-                            <span class="points text-success small fw-medium">3,200 pts</span>
+                            <span class="points text-success small fw-medium">3,122 pts</span>
                         </div>
                     </div>
                     <div class="TopInRank d-flex flex-row justify-content-between">
@@ -103,7 +120,7 @@
                             <span class="name ">Aymen</span>
                         </div>
                         <div>
-                            <span class="points text-success small fw-medium">3,200 pts</span>
+                            <span class="points text-success small fw-medium">2,900 pts</span>
                         </div>
                     </div>
                 </div>
@@ -115,7 +132,7 @@
                         <p class="topLAbel">Top in this challenge</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column gap-3 ">
+                <div class="d-flex flex-column gap-3 bg-light rounded-3  p-4 ms-auto " style="width: 90%; margin: auto;" >
                     <div class="TopInRank d-flex flex-row justify-content-between">
                         <div class="d-flex  gap-2 align-items-center">
                             <span
@@ -126,7 +143,7 @@
                             <span class="name ">Maria</span>
                         </div>
                         <div>
-                            <span class="points text-success small fw-medium">3,200 pts</span>
+                            <span class="points text-success small fw-medium">4,200 pts</span>
                         </div>
                     </div>
 
@@ -140,7 +157,7 @@
                             <span class="name ">Kelsie</span>
                         </div>
                         <div>
-                            <span class="points text-success small fw-medium">3,200 pts</span>
+                            <span class="points text-success small fw-medium">3,002 pts</span>
                         </div>
                     </div>
                     <div class="TopInRank d-flex flex-row justify-content-between">
@@ -153,7 +170,7 @@
                             <span class="name ">lharnounia</span>
                         </div>
                         <div>
-                            <span class="points text-success small fw-medium">3,200 pts</span>
+                            <span class="points text-success small fw-medium">1,459 pts</span>
                         </div>
                     </div>
                 </div>
@@ -163,7 +180,12 @@
         </div>
 
     </section>
+    <!-- for active challenges and participes -->
+    <div></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
