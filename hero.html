@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLeague Dashboard</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* --- Hero Banner Styling --- */
+        .hero-banner {
+            /* Using a placeholder image that resembles the runner/hill scene */
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.5) 100%), url('https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            padding: 40px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-welcome {
+            color: #34d399; /* Light green text */
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #e2e8f0; /* Off-white */
+        }
+
+        .btn-custom-green {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            border-radius: 50px; /* Pill shape */
+            padding: 10px 24px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-custom-green:hover {
+            background-color: #059669;
+            color: white;
+        }
+
+        /* --- Stats Cards Styling --- */
+        .stat-card {
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: 100%;
+            border: none;
+        }
+
+        /* Icon Container Styling */
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        /* Stat Text Styling */
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+            color: #111827;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Specific Card Colors */
+        /* Card 1: Active Challenges */
+        .card-green { background-color: #ecfdf5; }
+        .card-green .icon-box { background-color: #d1fae5; color: #10b981; }
+
+        /* Card 2: Participants */
+        .card-blue { background-color: #eff6ff; }
+        .card-blue .icon-box { background-color: #dbeafe; color: #3b82f6; }
+
+        /* Card 3: Total Results */
+        .card-purple { background-color: #f5f3ff; }
+        .card-purple .icon-box { background-color: #ede9fe; color: #8b5cf6; }
+
+        /* Card 4: Total Points */
+        .card-orange { background-color: #fff7ed; }
+        .card-orange .icon-box { background-color: #ffedd5; color: #f97316; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container py-4 py-md-5">
+        
+        <!-- Hero Banner Section -->
+        <div class="hero-banner mb-4">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7">
+                    <p class="hero-welcome">Welcome back, Alex!</p>
+                    <h1 class="hero-title">FitLeague</h1>
+                    <p class="hero-subtitle">Challenge your friends. Track your progress. Be the best!</p>
+                    <button class="btn btn-custom-green">
+                        <i class="fas fa-plus"></i> Create a new challenge
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Cards Section -->
+        <div class="row g-3 g-md-4">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="stat-card card-green">
+                    <div class="icon-box">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="stat-number">3</h3>
+                        <p class="stat-label">Active Challenges</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="stat-card card-blue">
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3 class="stat-number">5</h3>
+                        <p class="stat-label">Participants</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="stat-card card-purple">
+                    <div class="icon-box">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div>
+                        <h3 class="stat-number">12</h3>
+                        <p class="stat-label">Total Results</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="stat-card card-orange">
+                    <div class="icon-box">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div>
+                        <h3 class="stat-number">1,250</h3>
+                        <p class="stat-label">Total Points</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional, required for some interactive components, not strictly needed here) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
